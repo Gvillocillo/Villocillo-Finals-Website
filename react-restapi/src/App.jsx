@@ -65,50 +65,51 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={
-          <>
-            <h2>Plans</h2>
-            <ul>
-              {posts.map(post => (
-                <li key={post.id} onClick={() => setSelectedPost(post)}>
-                  {post.title}
-                </li>
-              ))}
-            </ul>
+<Route path="/" element={
+<>
+  <h2>Plans</h2>
+  <ul>
+    {posts.map(post => (
+      <li key={post.id} onClick={() => setSelectedPost(post)}>
+        <strong>{post.title}</strong>
+        <p>{post.body}</p>
+      </li>
+    ))}
+  </ul>
 
-            <h2>Pahingi ng Chismis!</h2>
-            <input
-              type="text"
-              placeholder="Title"
-              value={newPost.title}
-              onChange={e => setNewPost({ ...newPost, title: e.target.value })}
-            />
-            <textarea
-              placeholder="Body"
-              value={newPost.body}
-              onChange={e => setNewPost({ ...newPost, body: e.target.value })}
-            />
-            <button onClick={createPost}>Create</button>
+  <h2>Pahingi ng Chismis!</h2>
+  <input
+    type="text"
+    placeholder="Title"
+    value={newPost.title}
+    onChange={e => setNewPost({ ...newPost, title: e.target.value })}
+  />
+  <textarea
+    placeholder="Body"
+    value={newPost.body}
+    onChange={e => setNewPost({ ...newPost, body: e.target.value })}
+  />
+  <button onClick={createPost}>Create</button>
 
-            {/* Update Form (Shown when a post is selected) */}
-            {selectedPost && (
-              <div>
-                <h2>Update Post</h2>
-                <input
-                  type="text"
-                  value={selectedPost.title}
-                  onChange={e => setSelectedPost({ ...selectedPost, title: e.target.value })}
-                />
-                <textarea
-                  value={selectedPost.body}
-                  onChange={e => setSelectedPost({ ...selectedPost, body: e.target.value })}
-                />
-                <button onClick={updatePost}>Update</button>
-                <button onClick={() => deletePost(selectedPost.id)}>Delete</button>
-              </div>
-            )}
-          </>
-          } />
+  {/* Update Form (Shown when a post is selected) */}
+  {selectedPost && (
+    <div>
+      <h2>Update Post</h2>
+      <input
+        type="text"
+        value={selectedPost.title}
+        onChange={e => setSelectedPost({ ...selectedPost, title: e.target.value })}
+      />
+      <textarea
+        value={selectedPost.body}
+        onChange={e => setSelectedPost({ ...selectedPost, body: e.target.value })}
+      />
+      <button onClick={updatePost}>Update</button>
+      <button onClick={() => deletePost(selectedPost.id)}>Delete</button>
+    </div>
+  )}
+</>
+} />
         </Routes>
 
       </div>
