@@ -58,7 +58,7 @@ const App = () => {
   return (
     <Router> {/* Wrap with Router */}
       <div className="container">
-        <h1>React REST API Example</h1>
+        <h1>Planned Personal Website for Finals</h1>
 
         {/* Navigation (optional) */}
         <nav>
@@ -68,7 +68,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
           <>
-            <h2>Posts</h2>
+            <h2>Plans</h2>
             <ul>
               {posts.map(post => (
                 <li key={post.id} onClick={() => setSelectedPost(post)}>
@@ -77,7 +77,7 @@ const App = () => {
               ))}
             </ul>
 
-            <h2>Create New Post</h2>
+            <h2>Pahingi ng Chismis!</h2>
             <input
               type="text"
               placeholder="Title"
