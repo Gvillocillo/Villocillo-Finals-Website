@@ -12,13 +12,12 @@ const App = () => {
   }, []);
 
   const fetchPosts = async () => {
-    try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-      setPosts(response.data);
-    } catch (error) {
-      console.error('Error fetching posts:', error);
-    }
-  };
+  setPosts([
+    { id: 1, title: 'Your Plan 1', body: 'Vintage Web Design' },
+    { id: 2, title: 'Your Plan 2', body: 'Maximalist' },
+    { id: 3, title: 'Your Plan 3', body: 'The opposite of everything minimalist and modern' },
+  ]);
+};
 
   const createPost = async () => {
     try {
