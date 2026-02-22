@@ -34,12 +34,23 @@ export const guestbookService = {
   // Get all guestbook entries
   getEntries: async () => {
     try {
+      console.log('📚 Fetching guestbook entries...');
       const { data, error } = await supabase
         .from('messages')
         .select('*')
         .order('created_at', { ascending: false });
 
-      if (error) throw error;
+      if (error) {
+        console.error('❌ Supabase fetch error:', error.code, error.message);
+        if (error.code === 'PGRST116') {
+          console.warn('⚠️ Table "messages" not found. Make sure it exists in Supabase.');
+        }
+        if (error.message.includes('permission')) {
+          console.warn('⚠️ Row Level Security (RLS) blocking access. Check RLS policies.');
+        }
+        throw error;
+      }
+      console.log(`✅ Fetched ${data?.length || 0} messages`);
       return { data, error: null };
     } catch (error) {
       console.error('Error fetching guestbook entries:', error);
@@ -50,6 +61,7 @@ export const guestbookService = {
   // Add new guestbook entry
   addEntry: async (name, message, email) => {
     try {
+      console.log('📝 Adding new guestbook entry...');
       const { data, error } = await supabase
         .from('messages')
         .insert([
@@ -62,7 +74,11 @@ export const guestbookService = {
         ])
         .select();
 
-      if (error) throw error;
+      if (error) {
+        console.error('❌ Supabase insert error:', error.code, error.message);
+        throw error;
+      }
+      console.log('✅ Entry added successfully', data);
       return { data, error: null };
     } catch (error) {
       console.error('Error adding guestbook entry:', error);

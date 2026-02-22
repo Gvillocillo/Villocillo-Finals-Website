@@ -1,0 +1,197 @@
+/* Pages Styling - 1940s/1950s Vintage Theme */
+
+:root {
+  --color-burgundy: #8B4545;
+  --color-cream: #F2EDE6;
+  --color-forest-green: #3D5C3D;
+  --color-navy: #1A1D24;
+  --color-gold: #D4AF37;
+}
+
+/* Navbar Styling */
+.bg-burgundy {
+  background-color: var(--color-burgundy) !important;
+}
+
+.navbar-custom .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.navbar-custom .nav-link {
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--color-gold) !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-custom .nav-link.active {
+  color: var(--color-gold) !important;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: 0.25rem;
+}
+
+.text-cream {
+  color: var(--color-cream) !important;
+}
+
+/* Button Styling */
+.btn-burgundy {
+  background-color: var(--color-burgundy);
+  border-color: var(--color-burgundy);
+  color: var(--color-cream);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-burgundy:hover {
+  background-color: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-gold);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-burgundy:active,
+.btn-burgundy:focus {
+  background-color: var(--color-forest-green);
+  border-color: var(--color-forest-green);
+  color: var(--color-gold);
+}
+
+/* Card Styling */
+.card {
+  border-width: 2px;
+  font-family: "Lora", serif;
+}
+
+.border-burgundy {
+  border-color: var(--color-burgundy) !important;
+}
+
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Text Styling */
+.text-burgundy {
+  color: var(--color-burgundy) !important;
+}
+
+.text-dark {
+  color: var(--color-navy) !important;
+}
+
+/* Header Styling */
+header {
+  background-color: var(--color-cream);
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header .fs-4 {
+  font-family: "Lora", serif;
+  color: var(--color-navy);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--color-burgundy);
+}
+
+footer p {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Form Styling */
+.form-label {
+  font-family: "Playfair Display", serif;
+  color: var(--color-burgundy);
+}
+
+.form-control {
+  border-color: #ddd;
+  font-family: "Lora", serif;
+  color: var(--color-navy);
+}
+
+.form-control:focus {
+  border-color: var(--color-burgundy);
+  box-shadow: 0 0 0 0.2rem rgba(139, 69, 69, 0.25);
+}
+
+/* Badge Styling */
+.badge {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.75rem;
+}
+
+.badge.bg-burgundy {
+  background-color: var(--color-burgundy) !important;
+}
+
+.badge.bg-success {
+  background-color: var(--color-forest-green) !important;
+}
+
+.badge.bg-light {
+  background-color: #f8f9fa !important;
+  color: var(--color-burgundy) !important;
+}
+
+/* Alert Styling */
+.alert {
+  font-family: "Lora", serif;
+  border-radius: 8px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: var(--color-forest-green);
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: var(--color-burgundy);
+  color: #721c24;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header .fs-4 {
+    font-size: 1.1rem;
+  }
+}

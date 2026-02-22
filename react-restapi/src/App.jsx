@@ -3,6 +3,9 @@ import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import PersonalWebsite from './components/PersonalWebsite';
 import Guestbook from './components/Guestbook';
+import About from './components/About';
+import Contact from './components/Contact';
+import Work from './components/Work';
 import './App.css';
 
 const RestApiPage = () => {
@@ -109,6 +112,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/portfolio" element={<PersonalWebsite />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/guestbook" element={<Guestbook />} />
         <Route path="/api" element={<RestApiPage />} />
         <Route path="/" element={<PersonalWebsite />} />

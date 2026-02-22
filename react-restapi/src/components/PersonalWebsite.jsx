@@ -1,18 +1,19 @@
 import React from 'react';
 import '../personalWebsite.css';
+import '../styles/pages.css';
 import { Link } from 'react-router-dom';
 
 const PersonalWebsite = () => {
   return (
     <>
       {/* Responsive navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-custom bg-burgundy">
         <div className="container px-lg-5">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand text-cream fw-bold" to="/">
             A Site on the Web
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-dark"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -25,19 +26,24 @@ const PersonalWebsite = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/portfolio">
+                <Link className="nav-link text-cream active" aria-current="page" to="/portfolio">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <Link className="nav-link text-cream" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <Link className="nav-link text-cream" to="/contact">
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-cream" to="/guestbook">
+                  Guestbook
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,9 +59,9 @@ const PersonalWebsite = () => {
               <p className="fs-4">
                 This is my first attempt in creating a personal portfolio website
               </p>
-              <a className="btn btn-primary btn-lg" href="#work">
+              <Link className="btn btn-burgundy btn-lg text-cream fw-bold" to="/work">
                 Let's get to work!
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -152,10 +158,10 @@ const PersonalWebsite = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-5 bg-dark">
+      <footer className="py-5 bg-burgundy text-center text-cream">
         <div className="container">
-          <p className="m-0 text-center text-white">
-            Copyright &copy; Your Website 2023 | Powered by React + REST API
+          <p className="m-0">
+            Copyright &copy; Your Website 2026 | Powered by React + Supabase
           </p>
         </div>
       </footer>
