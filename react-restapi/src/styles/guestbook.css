@@ -2,7 +2,7 @@
 
 .guestbook-container {
   min-height: 100vh;
-  background: #F5F1E8;
+  background: #F2EDE6;
   color: #1A1D24;
   font-family: "Lora", Georgia, serif;
 }
@@ -26,6 +26,10 @@
 
 .guestbook-entries {
   padding: 1rem 0;
+  background: #FFF8F0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 3px solid #8B4545;
 }
 
 .guestbook-entries h2 {
@@ -191,9 +195,10 @@
 
 /* Scrollbar Styling (Optional) */
 .entries-list {
-  max-height: 600px;
+  max-height: 800px;
   overflow-y: auto;
   padding-right: 0.5rem;
+  margin-top: 1rem;
 }
 
 .entries-list::-webkit-scrollbar {

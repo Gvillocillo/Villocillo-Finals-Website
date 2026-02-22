@@ -210,13 +210,13 @@ const Guestbook = () => {
                   </div>
                 ) : error ? (
                   <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Note:</strong> {error}
+                    <strong>⚠️ Note:</strong> {error}
                     <br />
-                    <small>Make sure Supabase is configured with a guestbook table.</small>
+                    <small>Make sure Supabase is configured with a "messages" table and environment variables are set.</small>
                   </div>
                 ) : entries.length === 0 ? (
-                  <div className="alert alert-info">
-                    No messages yet. Be the first to sign!
+                  <div className="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>No messages yet!</strong> Be the first to sign the guestbook on the left. 👈
                   </div>
                 ) : (
                   <div className="entries-list">
