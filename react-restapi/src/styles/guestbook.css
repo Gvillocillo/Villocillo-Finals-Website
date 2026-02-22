@@ -1,18 +1,23 @@
-/* Guestbook Styles */
+/* Guestbook Styles - 1940s/1950s Vintage */
 
 .guestbook-container {
   min-height: 100vh;
-  background: var(--bs-body-bg, #3b5d3b);
-  color: var(--bs-body-color, #f4d03f);
+  background: #F5F1E8;
+  color: #1A1D24;
+  font-family: "Lora", Georgia, serif;
 }
 
 .guestbook-header {
-  background: linear-gradient(135deg, var(--color-red, #c0392b) 0%, var(--color-green, #3b5d3b) 100%);
+  background: linear-gradient(135deg, #8B4545 0%, #3D5C3D 100%);
 }
 
 .guestbook-header .display-5 {
-  font-family: 'Brush Script MT', cursive;
-  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  color: #F5F1E8;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .guestbook-content {
@@ -24,83 +29,92 @@
 }
 
 .guestbook-entries h2 {
-  color: var(--color-yellow, #f4d03f);
+  color: #8B4545;
   font-weight: bold;
   margin-bottom: 2rem;
-  border-bottom: 3px solid var(--color-red, #c0392b);
+  border-bottom: 3px solid #8B4545;
   padding-bottom: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 /* Entry Card Styles */
 .guestbook-entry {
-  border-left: 5px solid var(--color-red, #c0392b);
+  border-left: 5px solid #8B4545;
   transition: transform 0.2s, box-shadow 0.2s;
+  background: #FFF8F0;
 }
 
 .guestbook-entry:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 8px 16px rgba(139, 69, 69, 0.2) !important;
 }
 
 .guestbook-entry .card-title {
-  color: var(--bs-primary, #c0392b);
+  color: #8B4545;
   font-weight: bold;
+  font-family: "Playfair Display", serif;
 }
 
 .guestbook-entry .card-text {
   line-height: 1.6;
-  color: #333;
+  color: #1A1D24;
+  font-family: "Lora", Georgia, serif;
 }
 
 .guestbook-entry .btn-outline-danger {
-  color: var(--color-red, #c0392b);
-  border-color: var(--color-red, #c0392b);
+  color: #8B4545;
+  border-color: #8B4545;
 }
 
 .guestbook-entry .btn-outline-danger:hover {
-  background-color: var(--color-red, #c0392b);
-  color: white;
+  background-color: #8B4545;
+  color: #F5F1E8;
 }
 
 /* Form Styles */
 .card {
   border: none;
   border-radius: 12px;
+  background: #FFF8F0;
+  box-shadow: 0 2px 8px rgba(139, 69, 69, 0.1);
 }
 
 .form-control,
 .form-control:focus {
   border-radius: 8px;
-  border: 2px solid #ddd;
+  border: 2px solid #3D5C3D;
   transition: border-color 0.3s;
+  font-family: "Lora", Georgia, serif;
 }
 
 .form-control:focus {
-  border-color: var(--color-red, #c0392b);
-  box-shadow: 0 0 0 0.2rem rgba(192, 57, 43, 0.1);
+  border-color: #8B4545;
+  box-shadow: 0 0 0 0.2rem rgba(139, 69, 69, 0.1);
 }
 
 .form-label {
   font-weight: 600;
-  color: #333;
+  color: #1A1D24;
   margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
 }
 
 /* Button Styles */
 .btn-primary {
-  background-color: var(--color-red, #c0392b);
-  border-color: var(--color-red, #c0392b);
+  background-color: #8B4545;
+  border-color: #8B4545;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   transition: all 0.3s;
+  font-family: "Lora", Georgia, serif;
 }
 
 .btn-primary:hover {
-  background-color: #a93226;
-  border-color: #a93226;
+  background-color: #6B3535;
+  border-color: #6B3535;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+  box-shadow: 0 4px 12px rgba(139, 69, 69, 0.3);
 }
 
 .btn-primary:disabled {
