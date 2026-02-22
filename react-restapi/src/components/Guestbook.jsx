@@ -22,10 +22,12 @@ const Guestbook = () => {
 
   const loadEntries = async () => {
     setLoading(true);
+    setError(null);
     const { data, error } = await guestbookService.getEntries();
 
     if (error) {
-      setError(error.message || 'Failed to load guestbook entries');
+      console.error('Guestbook error:', error);
+      setError(error.message || 'Failed to load guestbook entries. Make sure Supabase is configured.');
     } else {
       setEntries(data || []);
     }
