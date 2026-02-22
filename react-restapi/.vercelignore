@@ -1,0 +1,11 @@
+# Vercel Build Configuration
+# This file is used by Vercel to build and deploy the application
+
+# Build settings are defined in vite.config.js and package.json
+# Vercel automatically detects Vite projects and uses:
+# - npm install (or yarn install / pnpm install)
+# - npm run build
+# - Output directory: dist/
+
+# For SPA routing, index.html is served for all routes
+# See vercel.json and vercel.config.js for custom routing rules

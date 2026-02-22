@@ -1,0 +1,15 @@
+module.exports = {
+  version: 2,
+  builds: [
+    {
+      src: 'dist',
+      use: '@vercel/static',
+    },
+  ],
+  routes: [
+    {
+      src: '/(.*)',
+      dest: '/index.html',
+    },
+  ],
+};
