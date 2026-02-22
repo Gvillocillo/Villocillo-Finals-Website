@@ -16,7 +16,7 @@ export const guestbookService = {
   getEntries: async () => {
     try {
       const { data, error } = await supabase
-        .from('guestbook')
+        .from('messages')
         .select('*')
         .order('created_at', { ascending: false });
 
@@ -32,7 +32,7 @@ export const guestbookService = {
   addEntry: async (name, message, email) => {
     try {
       const { data, error } = await supabase
-        .from('guestbook')
+        .from('messages')
         .insert([
           {
             name: name || 'Anonymous',
@@ -55,7 +55,7 @@ export const guestbookService = {
   deleteEntry: async (id) => {
     try {
       const { data, error } = await supabase
-        .from('guestbook')
+        .from('messages')
         .delete()
         .eq('id', id);
 
@@ -71,7 +71,7 @@ export const guestbookService = {
   toggleLike: async (id, currentLikes) => {
     try {
       const { data, error } = await supabase
-        .from('guestbook')
+        .from('messages')
         .update({ likes: currentLikes + 1 })
         .eq('id', id)
         .select();
