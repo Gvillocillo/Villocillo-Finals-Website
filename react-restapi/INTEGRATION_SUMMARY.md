@@ -31,6 +31,12 @@ Your personal website in the `Finals Website/personal_website/` folder has been 
 #### Future-Ready
 - ✅ **`src/components/ExampleVueComponent.vue`** - Example Vue component for Vue integration
 
+#### Supabase Integration (NEW!)
+- ✅ **`src/components/Guestbook.jsx`** - Supabase-powered guestbook feature
+- ✅ **`src/services/supabase.js`** - Supabase client with guestbook & auth services
+- ✅ **`SUPABASE_SETUP.md`** - Complete guestbook setup guide
+- ✅ **`src/styles/guestbook.css`** - Responsive guestbook styling
+
 ---
 
 ## Project Structure
@@ -40,9 +46,13 @@ react-restapi/
 ├── src/
 │   ├── components/
 │   │   ├── PersonalWebsite.jsx        # Your website as React component
+│   │   ├── Guestbook.jsx              # Supabase-powered guestbook
 │   │   └── ExampleVueComponent.vue    # Vue integration example
 │   ├── services/
-│   │   └── apiClient.js               # REST API client with interceptors
+│   │   ├── apiClient.js               # REST API client with interceptors
+│   │   └── supabase.js                # Supabase client & guestbook service
+│   ├── styles/
+│   │   └── guestbook.css              # Guestbook styles
 │   ├── App.jsx                        # Router & page routing
 │   ├── main.jsx                       # Entry point
 │   ├── App.css                        # App styles
@@ -53,11 +63,11 @@ react-restapi/
 │   └── favicon.ico                    # Your favicon
 │
 ├── index.html                         # HTML template with Bootstrap CDN
-├── package.json                       # Dependencies (React, Vue, Axios)
+├── package.json                       # Dependencies (React, Vue, Axios, Supabase)
 ├── vite.config.js                     # Vite + React + Vue support
 ├── vercel.json                        # Vercel deployment config
 ├── vercel.config.js                   # Advanced Vercel routing
-├── .env.example                       # Environment template
+├── .env.example                       # Environment template (with Supabase)
 ├── .vercelignore                      # Vercel build settings
 ├── INTEGRATION_GUIDE.md               # Full integration documentation
 ├── VERCEL_DEPLOYMENT.md               # Deployment instructions
@@ -74,6 +84,7 @@ Your application now supports:
 |-------|---------|
 | `/` | Personal Portfolio (PersonalWebsite component) |
 | `/portfolio` | Personal Portfolio (same as `/`) |
+| `/guestbook` | Guestbook (Supabase-powered) |
 | `/api` | REST API Testing Page (CRUD operations) |
 
 ### Example Navigation
@@ -82,8 +93,9 @@ Your application now supports:
 // In your components
 import { Link } from 'react-router-dom';
 
-<Link to="/">Portfolio</Link>      {/* Home */}
-<Link to="/api">API Testing</Link>  {/* REST API Page */}
+<Link to="/">Portfolio</Link>         {/* Home */}
+<Link to="/guestbook">Guestbook</Link> {/* Guestbook */}
+<Link to="/api">API Testing</Link>    {/* REST API Page */}
 ```
 
 ---
@@ -140,6 +152,92 @@ Your project now supports Vue.js components alongside React!
 
 ---
 
+## Supabase Integration (Guestbook)
+
+Your project includes a **fully-functional guestbook** powered by Supabase!
+
+### Features
+- ✅ Sign the guestbook with name, email, and message
+- ✅ Real-time message display (newest first)
+- ✅ Like/react to messages
+- ✅ Character limit (500) for messages
+- ✅ Responsive design with Bootstrap
+- ✅ Form validation and error handling
+
+### Getting Started
+
+1. **Create Supabase Account**
+   - Go to [supabase.com](https://supabase.com)
+   - Create a free account
+   - Create a new project
+
+2. **Set Up Database**
+   - Follow the SQL in [SUPABASE_SETUP.md](./SUPABASE_SETUP.md)
+   - Run the provided SQL to create `guestbook` table
+   - Enable Row Level Security
+
+3. **Configure Environment**
+   ```bash
+   cp .env.example .env
+   ```
+   - Add your Supabase URL and key from project settings
+   - `VITE_SUPABASE_URL=https://your-project.supabase.co`
+   - `VITE_SUPABASE_ANON_KEY=your-anon-key`
+
+4. **Access Guestbook**
+   - Home: `http://localhost:5173`
+   - Guestbook: `http://localhost:5173/guestbook`
+
+### Using Supabase in Components
+
+```javascript
+// Import the guestbook service
+import { guestbookService } from '../services/supabase';
+
+// Get all entries
+const { data, error } = await guestbookService.getEntries();
+
+// Add new entry
+await guestbookService.addEntry('John', 'Great site!', 'john@example.com');
+
+// Like a message
+await guestbookService.toggleLike(entryId, currentLikes);
+
+// Delete entry
+await guestbookService.deleteEntry(entryId);
+```
+
+### Database Schema
+
+```sql
+guestbook (
+  id: BIGINT (primary key),
+  name: TEXT (default: 'Anonymous'),
+  email: TEXT (nullable),
+  message: TEXT (required),
+  likes: INT (default: 0),
+  created_at: TIMESTAMP,
+  updated_at: TIMESTAMP
+)
+```
+
+### Security
+
+- **Row Level Security (RLS)** enabled for safe public access
+- **Policies configured** so anyone can read, insert, and like
+- **No authentication required** for basic guestbook usage
+- **Safe for production** with proper permission models
+
+### Advanced Supabase Features
+
+Check [SUPABASE_SETUP.md](./SUPABASE_SETUP.md) for:
+- Custom authentication integration
+- Email notifications on new entries
+- Content moderation workflows
+- Advanced database queries
+
+---
+
 ## Vercel Deployment
 
 ### Quick Deploy (3 steps)
@@ -147,7 +245,7 @@ Your project now supports Vue.js components alongside React!
 1. **Push to GitHub**
    ```bash
    git add .
-   git commit -m "Integrate personal website"
+   git commit -m "Integrate personal website with guestbook"
    git push origin main
    ```
 
@@ -155,6 +253,9 @@ Your project now supports Vue.js components alongside React!
    - Go to https://vercel.com/new
    - Select your GitHub repo
    - Root directory: `./react-restapi`
+   - Add environment variables:
+     - `VITE_SUPABASE_URL`
+     - `VITE_SUPABASE_ANON_KEY`
    - Click "Deploy"
 
 3. **Done!** Your site is live 🚀
@@ -162,6 +263,7 @@ Your project now supports Vue.js components alongside React!
 ### Visit Your Live Site
 - Vercel assigns a URL like `https://your-project.vercel.app`
 - Your personal portfolio is the home page
+- Guestbook is at `/guestbook`
 - REST API page is at `/api`
 
 ---
@@ -194,6 +296,8 @@ npm run preview
 - [ ] Visit `http://localhost:5173`
 - [ ] Test portfolio page and API page
 - [ ] Verify styling loads correctly
+- [ ] Set up Supabase and test guestbook
+- [ ] Sign the guestbook with a test message
 
 ### Phase 2: Deployment
 - [ ] Push to GitHub
@@ -203,6 +307,9 @@ npm run preview
 ### Phase 3: Enhancement
 - [ ] Add your own API endpoints
 - [ ] Create more React/Vue components
+- [ ] Add Supabase authentication to guestbook
+- [ ] Send email notifications on new guestbook entries
+- [ ] Implement moderation for guestbook messages
 - [ ] Add contact form or features
 - [ ] Connect real database
 - [ ] Set up authentication
@@ -253,8 +360,9 @@ npm install  # Reinstall dependencies
 | React Router | 7.13 | Navigation |
 | Vue | 3.4 | Optional Vue support |
 | Axios | 1.13 | HTTP Client |
+| Supabase | 2.38 | Database & Auth |
 | Bootstrap | 5.2 | Styling/Responsive |
-| Vite | 7.2 | Build tool |
+| Vite | 5.4 | Build tool |
 | Vercel | - | Hosting & deployment |
 
 ---
@@ -262,10 +370,12 @@ npm install  # Reinstall dependencies
 ## Additional Resources
 
 - 📚 [INTEGRATION_GUIDE.md](./INTEGRATION_GUIDE.md) - Detailed project guide
+- �️ [SUPABASE_SETUP.md](./SUPABASE_SETUP.md) - Guestbook setup guide
 - 🚀 [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) - Complete deployment steps
 - 📖 [React Router Docs](https://reactrouter.com)
 - 🔗 [Vite Docs](https://vitejs.dev)
 - 📦 [Vercel Docs](https://vercel.com/docs)
+- 🗄️ [Supabase Docs](https://supabase.com/docs)
 
 ---
 
