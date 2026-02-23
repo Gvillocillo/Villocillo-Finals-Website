@@ -67,14 +67,14 @@ const Contact = () => {
         <div className="container px-lg-5">
           <div className="row g-4">
             {/* Email Card */}
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
                 <div className="card-body p-4">
                   <div className="text-center mb-3">
                     <i className="bi bi-envelope-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
                   </div>
                   <h3 className="text-center mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Email</h3>
-                  <div style={{color: '#C0C0C0', fontSize: '0.95rem'}}>
+                  <div style={{color: '#C0C0C0', fontSize: '0.9rem'}}>
                     <p className="mb-2">
                       <strong style={{color: '#FFD27D'}}>School:</strong><br/>
                       <a href="mailto:jbvillocillo2@student.apc.edu.ph" style={{color: '#C0C0C0', textDecoration: 'none'}}>
@@ -82,13 +82,13 @@ const Contact = () => {
                       </a>
                     </p>
                     <p className="mb-2">
-                      <strong style={{color: '#FFD27D'}}>Personal (Gmail):</strong><br/>
+                      <strong style={{color: '#FFD27D'}}>Gmail:</strong><br/>
                       <a href="mailto:jgvvillocillo@gmail.com" style={{color: '#C0C0C0', textDecoration: 'none'}}>
                         jgvvillocillo@gmail.com
                       </a>
                     </p>
                     <p className="mb-0">
-                      <strong style={{color: '#FFD27D'}}>Personal (Hotmail):</strong><br/>
+                      <strong style={{color: '#FFD27D'}}>Hotmail:</strong><br/>
                       <a href="mailto:jgvvillocillo@hotmail.com" style={{color: '#C0C0C0', textDecoration: 'none'}}>
                         jgvvillocillo@hotmail.com
                       </a>
@@ -106,7 +106,7 @@ const Contact = () => {
                     <i className="bi bi-telephone-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
                   </div>
                   <h3 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Phone</h3>
-                  <p style={{color: '#C0C0C0', fontSize: '1.2rem'}}>
+                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
                     <a href="tel:+639171223820" style={{color: '#FFD27D', textDecoration: 'none'}}>
                       +63 917 122 3820
                     </a>
@@ -116,14 +116,14 @@ const Contact = () => {
             </div>
 
             {/* Location Card */}
-            <div className="col-lg-2">
+            <div className="col-lg-4">
               <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
                 <div className="card-body p-4 text-center">
                   <div className="mb-3">
                     <i className="bi bi-geo-alt-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
                   </div>
-                  <h3 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B', fontSize: '1.3rem'}}>Location</h3>
-                  <p style={{color: '#C0C0C0', fontSize: '0.9rem'}}>
+                  <h3 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Location</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
                     Taguig City, Philippines
                   </p>
                 </div>
