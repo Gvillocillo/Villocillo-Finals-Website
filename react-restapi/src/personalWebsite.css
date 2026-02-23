@@ -11698,6 +11698,391 @@ nav a:hover {
   color: #C1440E !important;
 }
 
+/* ==================== VIBRANT ACCENT COLORS & THEMES ==================== */
+
+/* Spy/Espionage theme */
+.theme-spy {
+  border-left: 8px solid #00D9FF !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-spy::before {
+  content: "🕵️ CLASSIFIED 🕵️";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #FF1744;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Cowboy/Outlaw theme */
+.theme-cowboy {
+  border-left: 8px solid #FF6B35 !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-cowboy::before {
+  content: "🤠 WANTED 🤠";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #B8860B;
+  color: #0D0D0D;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(2deg);
+  box-shadow: 2px 2px 0px rgba(255, 107, 53, 0.5);
+}
+
+/* Mechanic/Blue-collar theme */
+.theme-mechanic {
+  border-left: 8px solid #FF6B35 !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-mechanic::before {
+  content: "🔧 WRENCH TIME 🔧";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #39FF14;
+  color: #0D0D0D;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(-1deg);
+  box-shadow: 2px 2px 0px rgba(57, 255, 20, 0.5);
+}
+
+/* Pilot/Aviation theme */
+.theme-pilot {
+  border-left: 8px solid #0066FF !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-pilot::before {
+  content: "✈️ WINGS UP ✈️";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #0066FF;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(1deg);
+  box-shadow: 2px 2px 0px rgba(0, 102, 255, 0.5);
+}
+
+/* Motorsports/Racing theme */
+.theme-racing {
+  border-left: 8px solid #FF1744 !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-racing::before {
+  content: "🏁 FULL THROTTLE 🏁";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #FF1744;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 0px rgba(255, 23, 68, 0.6);
+}
+
+/* Weapons/Combat theme */
+.theme-combat {
+  border-left: 8px solid #9D4EDD !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-combat::before {
+  content: "⚔️ LOADED ⚔️";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #9D4EDD;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(1deg);
+  box-shadow: 2px 2px 0px rgba(157, 78, 221, 0.5);
+}
+
+/* Outdoor/Nature theme */
+.theme-outdoor {
+  border-left: 8px solid #39FF14 !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-outdoor::before {
+  content: "🏔️ WILDERNESS 🏔️";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #2A3F3A;
+  color: #39FF14;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 2px solid #39FF14;
+  transform: rotate(0deg);
+  box-shadow: 2px 2px 0px rgba(57, 255, 20, 0.3);
+}
+
+/* Alcohol/Whiskey theme */
+.theme-alcohol {
+  border-left: 8px solid #B8860B !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-alcohol::before {
+  content: "🥃 SPIRITS 🥃";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #B8860B;
+  color: #0D0D0D;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(2deg);
+  box-shadow: 2px 2px 0px rgba(184, 134, 11, 0.6);
+}
+
+/* Vehicle theme */
+.theme-vehicle {
+  border-left: 8px solid #FF6B35 !important;
+  position: relative;
+  padding-left: 2rem !important;
+}
+
+.theme-vehicle::before {
+  content: "🚗 HORSEPOWER 🏍️";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  background: #FF6B35;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(-1deg);
+  box-shadow: 2px 2px 0px rgba(255, 107, 53, 0.6);
+}
+
+/* ==================== HAND-DRAWN CHARACTER ILLUSTRATIONS ==================== */
+
+/* Secret Agent illustration style */
+.illust-spy {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(0, 217, 255, 0.5));
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Cowboy illustration style */
+.illust-cowboy {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(255, 107, 53, 0.5));
+  animation: sway 2s ease-in-out infinite;
+}
+
+/* Mechanic illustration style */
+.illust-mechanic {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(255, 107, 53, 0.5));
+  animation: bounce-light 2s ease-in-out infinite;
+}
+
+/* Pilot illustration style */
+.illust-pilot {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(0, 102, 255, 0.5));
+  animation: float-up 3s ease-in-out infinite;
+}
+
+/* Soldier illustration style */
+.illust-soldier {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(157, 78, 221, 0.5));
+  animation: march 2s ease-in-out infinite;
+}
+
+/* Biker illustration style */
+.illust-biker {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  filter: drop-shadow(2px 2px 0px rgba(255, 23, 68, 0.5));
+  animation: rev-engine 2.5s ease-in-out infinite;
+}
+
+/* ==================== VEHICLE ILLUSTRATIONS ==================== */
+
+.illust-car {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 0px rgba(255, 107, 53, 0.6));
+  display: inline-block;
+  animation: drive 4s linear infinite;
+}
+
+.illust-motorcycle {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 0px rgba(255, 23, 68, 0.6));
+  display: inline-block;
+  animation: drive-fast 3s linear infinite;
+}
+
+.illust-airplane {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 0px rgba(0, 102, 255, 0.6));
+  display: inline-block;
+  animation: fly 4s ease-in-out infinite;
+}
+
+/* ==================== WEAPON ILLUSTRATIONS ==================== */
+
+.illust-gun {
+  font-size: 2rem;
+  filter: drop-shadow(1px 1px 0px rgba(157, 78, 221, 0.6));
+  display: inline-block;
+}
+
+.illust-sword {
+  font-size: 2rem;
+  filter: drop-shadow(1px 1px 0px rgba(255, 23, 68, 0.6));
+  display: inline-block;
+  animation: slash 0.6s ease-in-out infinite;
+}
+
+.illust-dynamite {
+  font-size: 2rem;
+  filter: drop-shadow(1px 1px 0px rgba(255, 107, 53, 0.6));
+  display: inline-block;
+  animation: explode-flash 1s ease-in-out infinite;
+}
+
+/* ==================== OUTDOOR/NATURE ILLUSTRATIONS ==================== */
+
+.illust-mountain {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 0px rgba(57, 255, 20, 0.6));
+  display: inline-block;
+}
+
+.illust-forest {
+  font-size: 2rem;
+  filter: drop-shadow(1px 1px 0px rgba(42, 63, 58, 0.8));
+  display: inline-block;
+}
+
+.illust-bear {
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 0px rgba(184, 134, 11, 0.6));
+  display: inline-block;
+  animation: prowl 3s ease-in-out infinite;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+}
+
+@keyframes bounce-light {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes march {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(10px) rotate(0deg); }
+}
+
+@keyframes rev-engine {
+  0%, 100% { transform: skewX(-2deg); }
+  50% { transform: skewX(2deg); }
+}
+
+@keyframes drive {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(calc(100vw + 100%)); }
+}
+
+@keyframes drive-fast {
+  0% { transform: translateX(-100%) scaleX(-1); }
+  100% { transform: translateX(calc(100vw + 100%)) scaleX(-1); }
+}
+
+@keyframes fly {
+  0%, 100% { transform: translateY(-10px); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes slash {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+}
+
+@keyframes explode-flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes prowl {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
 /* ==================== DECORATIVE DIVIDERS & ORNAMENTS ==================== */
 
 .decorative-divider {

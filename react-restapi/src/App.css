@@ -9,6 +9,14 @@
   --color-steel: #4A5568;
   --color-copper: #B87333;
   --color-light-metal: #C0C0C0;
+  /* Vibrant accents for impact */
+  --color-neon-orange: #FF6B35;
+  --color-vibrant-blue: #0066FF;
+  --color-neon-red: #FF1744;
+  --color-vibrant-teal: #00D9FF;
+  --color-neon-green: #39FF14;
+  --color-vibrant-purple: #9D4EDD;
+  --color-neon-pink: #FF006E;
 }
 
 #root {
