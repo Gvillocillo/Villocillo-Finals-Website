@@ -524,8 +524,17 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.2;
+  font-family: "Playfair Display", serif;
+  color: var(--color-burgundy);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 
+    4px 4px 0px var(--color-gold),
+    8px 8px 0px rgba(139, 69, 69, 0.2),
+    0 0 30px rgba(212, 175, 55, 0.3);
+  position: relative;
 }
 @media (min-width: 1200px) {
   .display-5 {
@@ -11553,7 +11562,48 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
-  width: 4rem;
-  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #4169E1 0%, #1E90FF 50%, #0047AB 100%);
+  border: 4px solid #FFD700;
+  border-radius: 12px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(212, 175, 55, 0.4);
+  position: relative;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.feature::before {
+  content: "✦";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D4AF37;
+  font-size: 1.5rem;
+}
+
+.feature::after {
+  content: "✦";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D4AF37;
+  font-size: 1.5rem;
+}
+
+.feature:hover {
+  transform: scale(1.15) rotate(-5deg);
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3),
+    0 0 0 4px #F2EDE6,
+    0 0 30px rgba(212, 175, 55, 0.6);
 }
