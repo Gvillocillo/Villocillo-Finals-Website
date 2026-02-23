@@ -196,7 +196,7 @@ const PersonalWebsite = () => {
       <footer className="py-5 bg-burgundy text-center text-cream">
         <div className="container">
           <p className="m-0">
-            Copyright &copy; Your Website 2026 | Powered by React + Supabase
+            Copyright &copy; Juan Gabriel Victor B. Villocillo 2026 | Powered by React + Supabase
           </p>
         </div>
       </footer>

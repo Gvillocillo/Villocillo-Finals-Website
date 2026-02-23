@@ -199,7 +199,8 @@
   transition: all 0.3s;
   font-family: "Lora", Georgia, serif;
   background: #0D0D0D;
-  color: #C0C0C0;
+  color: #E0E0E0;
+  font-size: 1.1rem;
 }
 
 .form-control:focus {
@@ -210,7 +211,8 @@
 
 .form-control::placeholder {
   font-family: "Caveat", "Lora", serif;
-  opacity: 0.7;
+  opacity: 1;
+  color: #888;
 }
 
 .form-label {

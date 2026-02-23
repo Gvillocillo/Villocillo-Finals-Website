@@ -245,7 +245,7 @@ const Guestbook = () => {
             {/* Entries Section */}
             <div className="col-lg-7">
               <div className="guestbook-entries">
-                <h2 className="mb-4 brushstroke-emphasis">
+                <h2 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>
                   Messages ({entries.length})
                 </h2>
 
@@ -314,7 +314,7 @@ const Guestbook = () => {
       <footer className="py-5 bg-burgundy text-center text-cream">
         <div className="container">
           <p className="m-0">
-            Copyright &copy; Your Website 2026 | Powered by React + Supabase
+            Copyright &copy; Juan Gabriel Victor B. Villocillo 2026 | Powered by React + Supabase
           </p>
         </div>
       </footer>

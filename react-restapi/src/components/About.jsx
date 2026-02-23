@@ -132,7 +132,7 @@ const About = () => {
                     📸 Gallery 🎨
                   </h2>
                   <p className="text-center mb-5" style={{color: '#C0C0C0'}}>
-                    A glimpse into my world - projects, passions, and adventures
+                    A glimpse into my world - peers, passions, and adventures
                   </p>
                   
                   <div className="row g-4">
@@ -339,7 +339,7 @@ const About = () => {
       <footer className="py-5 bg-burgundy text-center text-cream">
         <div className="container">
           <p className="m-0">
-            Copyright &copy; Your Website 2026 | Powered by React + Supabase
+            Copyright &copy; Juan Gabriel Victor B. Villocillo 2026 | Powered by React + Supabase
           </p>
         </div>
       </footer>
