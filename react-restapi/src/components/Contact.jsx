@@ -99,7 +99,7 @@ const Contact = () => {
             </div>
 
             {/* Phone Card */}
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
                 <div className="card-body p-4 text-center">
                   <div className="mb-3">
@@ -110,6 +110,21 @@ const Contact = () => {
                     <a href="tel:+639171223820" style={{color: '#FFD27D', textDecoration: 'none'}}>
                       +63 917 122 3820
                     </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Location Card */}
+            <div className="col-lg-2">
+              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-3">
+                    <i className="bi bi-geo-alt-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B', fontSize: '1.3rem'}}>Location</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '0.9rem'}}>
+                    Taguig City, Philippines
                   </p>
                 </div>
               </div>
@@ -138,7 +153,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-4 text-center">
                       <a href="https://www.threads.net/@gabvillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
-                        <i className="bi bi-threads" style={{fontSize: '2rem'}}></i>
+                        <i className="bi bi-threads-fill" style={{fontSize: '2rem'}}></i>
                         <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>@gabvillocillo</p>
                       </a>
                     </div>
@@ -157,7 +172,13 @@ const Contact = () => {
                     <div className="col-md-4 text-center">
                       <a href="https://github.com/Gvillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
                         <i className="bi bi-github" style={{fontSize: '2rem'}}></i>
-                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>GitHub</p>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>School: Gvillocillo</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://github.com/HotHeadGranite" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-github" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>Personal: HotHeadGranite</p>
                       </a>
                     </div>
                   </div>
