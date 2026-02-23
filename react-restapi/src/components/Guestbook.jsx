@@ -137,10 +137,10 @@ const Guestbook = () => {
     <div className="guestbook-container">
       <header className="guestbook-header py-5">
         <div className="container px-lg-5">
-          <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
+          <div className="p-4 p-lg-5 rounded-3 text-center" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
             <div className="m-4 m-lg-5">
-              <h1 className="display-5 fw-bold">Guestbook</h1>
-              <p className="fs-4">Sign my guestbook and leave a message!</p>
+              <h1 className="display-5 fw-bold brushstroke-title" style={{color: '#B8860B'}}>Guestbook</h1>
+              <p className="fs-4 brushstroke-emphasis" style={{color: '#C0C0C0'}}>Sign my guestbook and leave a message!</p>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ const Guestbook = () => {
             <div className="col-lg-5 mb-5">
               <div className="card shadow-sm h-100">
                 <div className="card-body p-4">
-                  <h2 className="card-title mb-4">Sign the Book</h2>
+                  <h2 className="card-title mb-4 brushstroke-emphasis">Sign the Book</h2>
 
                   {submitSuccess && (
                     <div className="alert alert-success alert-dismissible fade show" role="alert">
@@ -245,7 +245,7 @@ const Guestbook = () => {
             {/* Entries Section */}
             <div className="col-lg-7">
               <div className="guestbook-entries">
-                <h2 className="mb-4">
+                <h2 className="mb-4 brushstroke-emphasis">
                   Messages ({entries.length})
                 </h2>
 

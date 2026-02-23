@@ -67,73 +67,100 @@ const Contact = () => {
         <div className="container px-lg-5">
           <div className="row g-4">
             {/* Email Card */}
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
-                <div className="card-body p-5 text-center">
-                  <div className="mb-4">
-                    <i className="bi bi-envelope-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                <div className="card-body p-4">
+                  <div className="text-center mb-3">
+                    <i className="bi bi-envelope-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
                   </div>
-                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Email</h3>
-                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
-                    <a href="mailto:your.email@example.com" style={{color: '#FFD27D', textDecoration: 'none'}}>
-                      your.email@example.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Social Media Card */}
-            <div className="col-md-6">
-              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
-                <div className="card-body p-5 text-center">
-                  <div className="mb-4">
-                    <i className="bi bi-share-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                  <h3 className="text-center mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Email</h3>
+                  <div style={{color: '#C0C0C0', fontSize: '0.95rem'}}>
+                    <p className="mb-2">
+                      <strong style={{color: '#FFD27D'}}>School:</strong><br/>
+                      <a href="mailto:jbvillocillo2@student.apc.edu.ph" style={{color: '#C0C0C0', textDecoration: 'none'}}>
+                        jbvillocillo2@student.apc.edu.ph
+                      </a>
+                    </p>
+                    <p className="mb-2">
+                      <strong style={{color: '#FFD27D'}}>Personal (Gmail):</strong><br/>
+                      <a href="mailto:jgvvillocillo@gmail.com" style={{color: '#C0C0C0', textDecoration: 'none'}}>
+                        jgvvillocillo@gmail.com
+                      </a>
+                    </p>
+                    <p className="mb-0">
+                      <strong style={{color: '#FFD27D'}}>Personal (Hotmail):</strong><br/>
+                      <a href="mailto:jgvvillocillo@hotmail.com" style={{color: '#C0C0C0', textDecoration: 'none'}}>
+                        jgvvillocillo@hotmail.com
+                      </a>
+                    </p>
                   </div>
-                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Social Media</h3>
-                  <div className="d-flex justify-content-center gap-3">
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
-                      <i className="bi bi-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
-                      <i className="bi bi-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Location Card */}
-            <div className="col-md-6">
-              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
-                <div className="card-body p-5 text-center">
-                  <div className="mb-4">
-                    <i className="bi bi-geo-alt-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
-                  </div>
-                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Location</h3>
-                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
-                    Your City, Country
-                  </p>
                 </div>
               </div>
             </div>
 
             {/* Phone Card */}
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
-                <div className="card-body p-5 text-center">
-                  <div className="mb-4">
-                    <i className="bi bi-telephone-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-3">
+                    <i className="bi bi-telephone-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
                   </div>
-                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Phone</h3>
-                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
-                    <a href="tel:+1234567890" style={{color: '#FFD27D', textDecoration: 'none'}}>
-                      +1 (234) 567-890
+                  <h3 className="mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Phone</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '1.2rem'}}>
+                    <a href="tel:+639171223820" style={{color: '#FFD27D', textDecoration: 'none'}}>
+                      +63 917 122 3820
                     </a>
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Social Media Card - Full Width */}
+            <div className="col-12">
+              <div className="card border-0" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-4">
+                  <div className="text-center mb-3">
+                    <i className="bi bi-share-fill" style={{fontSize: '2.5rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="text-center mb-4 brushstroke-emphasis" style={{color: '#B8860B'}}>Social Media</h3>
+                  <div className="row g-3">
+                    <div className="col-md-4 text-center">
+                      <a href="https://www.facebook.com/juangabrielvictor.villocillo.5" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-facebook" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>Facebook</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://www.instagram.com/gabvillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-instagram" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>@gabvillocillo</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://www.threads.net/@gabvillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-threads" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>@gabvillocillo</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://twitter.com/JgvVillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-twitter-x" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>@JgvVillocillo</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://www.linkedin.com/in/juan-gabriel-victor-villocillo-52533a235" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-linkedin" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>LinkedIn</p>
+                      </a>
+                    </div>
+                    <div className="col-md-4 text-center">
+                      <a href="https://github.com/Gvillocillo" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', textDecoration: 'none', display: 'block'}}>
+                        <i className="bi bi-github" style={{fontSize: '2rem'}}></i>
+                        <p className="mt-2 mb-0" style={{color: '#C0C0C0', fontSize: '0.9rem'}}>GitHub</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

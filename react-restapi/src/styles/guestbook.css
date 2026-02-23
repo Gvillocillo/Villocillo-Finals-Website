@@ -11,8 +11,8 @@
 
 .guestbook-container {
   min-height: 100vh;
-  background: var(--color-cream);
-  color: var(--color-navy);
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+  color: #C0C0C0;
   font-family: "Lora", Georgia, serif;
   position: relative;
 }
@@ -31,48 +31,8 @@
 }
 
 .guestbook-header {
-  background: linear-gradient(135deg, var(--color-burgundy) 0%, #6D3333 50%, var(--color-rust) 100%);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
-}
-
-.guestbook-header::before {
-  content: "✦ ✦ ✦ ✦ ✦";
-  display: block;
-  text-align: center;
-  color: var(--color-gold);
-  font-size: 1.5rem;
-  letter-spacing: 1rem;
-  padding-top: 1rem;
-}
-
-.guestbook-header::after {
-  content: "✦ ✦ ✦ ✦ ✦";
-  display: block;
-  text-align: center;
-  color: var(--color-gold);
-  font-size: 1.5rem;
-  letter-spacing: 1rem;
-  padding-bottom: 1rem;
-}
-
-.guestbook-header .display-5 {
-  font-family: "Playfair Display", serif;
-  color: var(--color-navy);
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-shadow: 4px 4px 0px var(--color-teal), 8px 8px 15px rgba(0, 0, 0, 0.4);
-}
-
-.guestbook-header .fs-4 {
-  font-family: "Caveat", "Lora", serif;
-  font-size: 1.8rem;
-  color: var(--color-forest-green);
-  font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .guestbook-content {
