@@ -105,16 +105,16 @@ const About = () => {
                     <div className="card-body p-4">
                       <h2 className="card-title fw-bold mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>My Story</h2>
                       <p className="lh-lg mb-3">
-                        I'm a sophomore pursuing a Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at a prestigious university. My journey in tech has been dynamic and ever-evolving.
+                        As of this writing, I am currently a sophomore student at Asia Pacific College, taking up a Bachelor's degree in Computer Science, specializing in Cybersecurity and Forensics. However, there is more to me than meets the eye.
                       </p>
                       <p className="lh-lg mb-3">
-                        Previously, I explored mechanical engineering at the University of Santo Tomas from 2023 to 2024, which gave me a unique perspective on how systems work and fail. While that path wasn't for me long-term, it taught me problem-solving and persistence that I carry into my current studies.
+                        I am the middle child in a family of five (5). We have nine (9) dogs at home. I am into motorsports, defense, blue-collar work, and classic, timeless, rugged clothing. My favorite genres for movies and TV are action, war, history, cowboys and outlaws, crime, gangsters, racing, romance (to an extent), and comedy. I love playing video games, driving, and exploring places outside the metro. I love tinkering. I am curious how things work and look underneath their shell. DIY? I'm your guy!
                       </p>
                       <p className="lh-lg mb-3">
-                        Today, I'm passionate about cybersecurity, problem-solving, and continuous learning. I serve as a relations officer in multiple organizations including JISSA-APC and APC Chorale, where I've developed strong communication and leadership skills.
+                        I dislike trendy fashion. I think baggy and overfitting clothes are overrated. I prefer boots over sneakers, but that is not to say I don't like the latter; I can think of a few pairs that I dig. Call me old-fashioned, classic, weird, old, or even baduy. To each their own, after all.
                       </p>
                       <p className="lh-lg mb-0">
-                        Beyond academics, I'm a tinkerer who loves fixing things, a gearhead who's into cars and motorcycles, and a vintage enthusiast who appreciates classic music, blues, and soul. If it has history and craftsmanship, I'm interested in it.
+                        My current goals are to become fit and slim. Hereditary diseases are scary, so it is best to avoid them as early as possible. I wish to travel the world and explore new things. I want to learn new concepts foreign to most and share it with them. I want to go have fun and live life.
                       </p>
                     </div>
                   </div>
