@@ -82,7 +82,7 @@
 }
 
 .guestbook-entries {
-  background: linear-gradient(135deg, #FFF8F0 0%, #FFFAF5 100%);
+  background: linear-gradient(135deg, #2a2420 0%, #1f1f1f 100%);
   padding: 2rem;
   border-radius: 12px;
   border: 4px double var(--color-burgundy);
@@ -110,7 +110,7 @@
 }
 
 .guestbook-entries h2 {
-  color: var(--color-burgundy);
+  color: var(--color-gold);
   font-weight: 900;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
@@ -139,7 +139,7 @@
 .guestbook-entry {
   border: 3px solid var(--color-burgundy);
   border-left: 8px solid var(--color-rust);
-  background: linear-gradient(135deg, #FFF8F0 0%, #FFFAF5 100%);
+  background: linear-gradient(135deg, #3a3228 0%, #2a2420 100%);
   border-radius: 8px;
   transition: all 0.3s ease;
   box-shadow: 4px 4px 0px rgba(139, 69, 69, 0.2);
@@ -162,7 +162,7 @@
 }
 
 .guestbook-entry .card-title {
-  color: var(--color-burgundy);
+  color: var(--color-gold);
   font-weight: 900;
   font-family: "Playfair Display", serif;
   font-size: 1.3rem;
@@ -172,7 +172,7 @@
 
 .guestbook-entry .card-text {
   line-height: 1.7;
-  color: var(--color-navy);
+  color: #C0C0C0;
   font-family: "Lora", Georgia, serif;
   margin-top: 0.5rem;
 }
@@ -203,7 +203,7 @@
 .card {
   border: 3px solid var(--color-burgundy);
   border-radius: 12px;
-  background: linear-gradient(135deg, #FFF8F0 0%, #FFFAF5 100%);
+  background: linear-gradient(135deg, #2a2420 0%, #1f1f1f 100%);
   box-shadow: 6px 6px 0px rgba(139, 69, 69, 0.2);
   transition: all 0.3s ease;
 }
@@ -213,13 +213,18 @@
   box-shadow: 8px 8px 0px rgba(139, 69, 69, 0.3);
 }
 
+.card h2 {
+  color: var(--color-gold);
+}
+
 .form-control,
 .form-control:focus {
   border-radius: 8px;
   border: 3px solid var(--color-forest-green);
   transition: all 0.3s;
   font-family: "Lora", Georgia, serif;
-  background: white;
+  background: #0D0D0D;
+  color: #C0C0C0;
 }
 
 .form-control:focus {
@@ -235,7 +240,7 @@
 
 .form-label {
   font-weight: 900;
-  color: var(--color-burgundy);
+  color: var(--color-gold);
   margin-bottom: 0.75rem;
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;

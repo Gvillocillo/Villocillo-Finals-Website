@@ -1,32 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/pages.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // For demo, just show success. In production, use email service like EmailJS
-    console.log('Contact form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setSubmitted(false), 3000);
-  };
 
   return (
     <>
@@ -89,86 +65,75 @@ const Contact = () => {
       {/* Content */}
       <section className="py-5">
         <div className="container px-lg-5">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="card border-0" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B', color: '#C0C0C0'}}>
-                <div className="card-body p-5">
-                  {submitted && (
-                    <div className="alert alert-success alert-dismissible fade show" role="alert">
-                      Thank you for reaching out! I'll get back to you soon. ✨
-                      <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                  )}
+          <div className="row g-4">
+            {/* Email Card */}
+            <div className="col-md-6">
+              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-5 text-center">
+                  <div className="mb-4">
+                    <i className="bi bi-envelope-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Email</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
+                    <a href="mailto:your.email@example.com" style={{color: '#FFD27D', textDecoration: 'none'}}>
+                      your.email@example.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-                  <form onSubmit={handleSubmit}>
-                    <div className="mb-4">
-                      <label htmlFor="name" className="form-label fw-bold" style={{color: '#B8860B'}}>
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
-                        required
-                      />
-                    </div>
+            {/* Social Media Card */}
+            <div className="col-md-6">
+              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-5 text-center">
+                  <div className="mb-4">
+                    <i className="bi bi-share-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Social Media</h3>
+                  <div className="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
+                      <i className="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style={{color: '#FFD27D', fontSize: '1.5rem'}}>
+                      <i className="bi bi-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <div className="mb-4">
-                      <label htmlFor="email" className="form-label fw-bold" style={{color: '#B8860B'}}>
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
-                        required
-                      />
-                    </div>
+            {/* Location Card */}
+            <div className="col-md-6">
+              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-5 text-center">
+                  <div className="mb-4">
+                    <i className="bi bi-geo-alt-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Location</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
+                    Your City, Country
+                  </p>
+                </div>
+              </div>
+            </div>
 
-                    <div className="mb-4">
-                      <label htmlFor="subject" className="form-label fw-bold" style={{color: '#B8860B'}}>
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
-                        required
-                      />
-                    </div>
-
-                    <div className="mb-4">
-                      <label htmlFor="message" className="form-label fw-bold" style={{color: '#B8860B'}}>
-                        Message
-                      </label>
-                      <textarea
-                        className="form-control"
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        rows="5"
-                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
-                        required
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" className="btn btn-burgundy btn-lg w-100 text-cream fw-bold">
-                      Send Message
-                    </button>
-                  </form>
+            {/* Phone Card */}
+            <div className="col-md-6">
+              <div className="card border-0 h-100" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
+                <div className="card-body p-5 text-center">
+                  <div className="mb-4">
+                    <i className="bi bi-telephone-fill" style={{fontSize: '3rem', color: '#B8860B'}}></i>
+                  </div>
+                  <h3 className="mb-3 brushstroke-emphasis" style={{color: '#B8860B'}}>Phone</h3>
+                  <p style={{color: '#C0C0C0', fontSize: '1.1rem'}}>
+                    <a href="tel:+1234567890" style={{color: '#FFD27D', textDecoration: 'none'}}>
+                      +1 (234) 567-890
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
