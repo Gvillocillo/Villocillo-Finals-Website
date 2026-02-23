@@ -6,10 +6,10 @@
   "description": "Integrated React portfolio website with REST API capabilities",
   "author": "Gvillocillo",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint .",
+    "dev": "vite --config config/vite.config.js",
+    "build": "vite build --config config/vite.config.js",
+    "preview": "vite preview --config config/vite.config.js",
+    "lint": "eslint . --config config/eslint.config.js",
     "vercel:build": "npm run build"
   },
   "dependencies": {
