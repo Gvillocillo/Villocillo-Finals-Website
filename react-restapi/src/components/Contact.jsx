@@ -75,12 +75,12 @@ const Contact = () => {
       </nav>
 
       {/* Header */}
-      <header className="py-5 bg-light">
+      <header className="py-5">
         <div className="container px-lg-5">
-          <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
+          <div className="p-4 p-lg-5 rounded-3 text-center" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold" style={{color: '#1A1D24', textShadow: '3px 3px 0px #20A39E'}}>Get in Touch</h1>
-              <p className="fs-4" style={{color: '#3D5C3D'}}>I'd love to hear from you!</p>
+              <h1 className="display-4 fw-bold" style={{color: '#B8860B', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>Get in Touch</h1>
+              <p className="fs-4" style={{color: '#C0C0C0'}}>I'd love to hear from you!</p>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Contact = () => {
         <div className="container px-lg-5">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="card border-burgundy">
+              <div className="card border-0" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B', color: '#C0C0C0'}}>
                 <div className="card-body p-5">
                   {submitted && (
                     <div className="alert alert-success alert-dismissible fade show" role="alert">
@@ -102,61 +102,65 @@ const Contact = () => {
 
                   <form onSubmit={handleSubmit}>
                     <div className="mb-4">
-                      <label htmlFor="name" className="form-label fw-bold text-burgundy">
+                      <label htmlFor="name" className="form-label fw-bold" style={{color: '#B8860B'}}>
                         Name
                       </label>
                       <input
                         type="text"
-                        className="form-control border-burgundy"
+                        className="form-control"
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
+                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
                         required
                       />
                     </div>
 
                     <div className="mb-4">
-                      <label htmlFor="email" className="form-label fw-bold text-burgundy">
+                      <label htmlFor="email" className="form-label fw-bold" style={{color: '#B8860B'}}>
                         Email
                       </label>
                       <input
                         type="email"
-                        className="form-control border-burgundy"
+                        className="form-control"
                         id="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
+                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
                         required
                       />
                     </div>
 
                     <div className="mb-4">
-                      <label htmlFor="subject" className="form-label fw-bold text-burgundy">
+                      <label htmlFor="subject" className="form-label fw-bold" style={{color: '#B8860B'}}>
                         Subject
                       </label>
                       <input
                         type="text"
-                        className="form-control border-burgundy"
+                        className="form-control"
                         id="subject"
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
+                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
                         required
                       />
                     </div>
 
                     <div className="mb-4">
-                      <label htmlFor="message" className="form-label fw-bold text-burgundy">
+                      <label htmlFor="message" className="form-label fw-bold" style={{color: '#B8860B'}}>
                         Message
                       </label>
                       <textarea
-                        className="form-control border-burgundy"
+                        className="form-control"
                         id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         rows="5"
+                        style={{background: '#0D0D0D', border: '2px solid #B8860B', color: '#C0C0C0'}}
                         required
                       ></textarea>
                     </div>

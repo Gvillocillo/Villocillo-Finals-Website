@@ -50,12 +50,12 @@ const About = () => {
       </nav>
 
       {/* Header */}
-      <header className="py-5 bg-light">
+      <header className="py-5">
         <div className="container px-lg-5">
-          <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
+          <div className="p-4 p-lg-5 rounded-3 text-center" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold" style={{color: '#1A1D24', textShadow: '3px 3px 0px #20A39E'}}>About Me</h1>
-              <p className="fs-4" style={{color: '#3D5C3D'}}>Getting to know who I am</p>
+              <h1 className="display-4 fw-bold" style={{color: '#B8860B', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>About Me</h1>
+              <p className="fs-4" style={{color: '#C0C0C0'}}>Getting to know who I am</p>
             </div>
           </div>
         </div>
@@ -66,19 +66,19 @@ const About = () => {
         <div className="container px-lg-5">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="card border-burgundy">
+              <div className="card border-0" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B', color: '#C0C0C0'}}>
                 <div className="card-body p-5">
-                  <h2 className="card-title text-burgundy mb-4">My Story</h2>
-                  <p className="fs-5 lh-lg text-dark mb-4">
+                  <h2 className="card-title fw-bold mb-4" style={{color: '#B8860B'}}>My Story</h2>
+                  <p className="fs-5 lh-lg mb-4">
                     I'm a sophomore pursuing a Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at a prestigious university. My journey in tech has been dynamic and ever-evolving.
                   </p>
-                  <p className="fs-5 lh-lg text-dark mb-4">
+                  <p className="fs-5 lh-lg mb-4">
                     Previously, I explored mechanical engineering at the University of Santo Tomas from 2023 to 2024, which gave me a unique perspective on how systems work and fail. While that path wasn't for me long-term, it taught me problem-solving and persistence that I carry into my current studies.
                   </p>
-                  <p className="fs-5 lh-lg text-dark mb-4">
+                  <p className="fs-5 lh-lg mb-4">
                     Today, I'm passionate about cybersecurity, problem-solving, and continuous learning. I serve as a relations officer in multiple organizations including JISSA-APC and APC Chorale, where I've developed strong communication and leadership skills.
                   </p>
-                  <p className="fs-5 lh-lg text-dark">
+                  <p className="fs-5 lh-lg">
                     Beyond academics, I'm a tinkerer who loves fixing things, a gearhead who's into cars and motorcycles, and a vintage enthusiast who appreciates classic music, blues, and soul. If it has history and craftsmanship, I'm interested in it.
                   </p>
                 </div>
