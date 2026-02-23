@@ -79,8 +79,8 @@ const Contact = () => {
         <div className="container px-lg-5">
           <div className="p-4 p-lg-5 rounded-3 text-center" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold" style={{color: '#B8860B', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>Get in Touch</h1>
-              <p className="fs-4" style={{color: '#C0C0C0'}}>I'd love to hear from you!</p>
+              <h1 className="display-4 fw-bold brushstroke-title" style={{color: '#B8860B', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>Get in Touch</h1>
+              <p className="fs-4 brushstroke-emphasis" style={{color: '#C0C0C0'}}>I'd love to hear from you!</p>
             </div>
           </div>
         </div>

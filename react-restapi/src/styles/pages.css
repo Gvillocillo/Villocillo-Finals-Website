@@ -225,26 +225,31 @@ header .card:hover {
 .btn-burgundy {
   background: linear-gradient(135deg, #2C1414 0%, #5a4535 100%);
   border: 3px solid #B8860B;
-  color: #B8860B;
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
+  color: #F2E3B5;
+  font-family: "Satisfy", "Caveat", cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.35rem;
   padding: 0.75rem 2rem;
   transition: all 0.3s ease;
-  text-transform: uppercase;
+  text-transform: none;
   position: relative;
   box-shadow: 5px 5px 0px rgba(184, 134, 11, 0.4);
+  text-shadow: 1px 1px 0 #1a1a1a, 0 0 10px rgba(184, 134, 11, 0.45);
 }
 
 .btn-burgundy::before {
   content: "⚙";
   margin-right: 0.5rem;
+  color: #FFD27D;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-shadow: 1px 1px 0 #1a1a1a, 0 0 10px rgba(255, 210, 125, 0.6);
 }
 
 .btn-burgundy:hover {
   background: linear-gradient(135deg, #5a4535 0%, #3a2525 100%);
-  color: #B8860B;
+  color: #FFE7B3;
   box-shadow: 7px 7px 0px rgba(184, 134, 11, 0.5);
   transform: translate(-2px, -2px);
   text-decoration: none;
@@ -341,6 +346,22 @@ header .card:hover {
   font-size: 1.3rem;
   color: var(--color-rust);
   font-weight: bold;
+}
+
+.brushstroke-title {
+  font-family: "Satisfy", "Caveat", cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: var(--color-gold);
+  text-shadow: 2px 2px 0 #1a1a1a, 0 0 12px rgba(184, 134, 11, 0.6);
+}
+
+.brushstroke-emphasis {
+  font-family: "Satisfy", "Caveat", cursive;
+  font-weight: 700;
+  color: var(--color-gold);
+  text-shadow: 1px 1px 0 #1a1a1a, 0 0 8px rgba(184, 134, 11, 0.5);
 }
 
 /* ==================== FOOTER STYLING ==================== */
