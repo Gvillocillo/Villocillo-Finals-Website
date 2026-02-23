@@ -6,63 +6,53 @@ const Work = () => {
   const projects = [
     {
       id: 1,
-      title: 'Classified Network System 🕵️',
-      description: 'A vintage-styled responsive website built with React, Bootstrap, and Supabase. Features a guestbook system and REST API integration. Secret agent approved.',
-      tech: ['React', 'Bootstrap', 'Supabase', 'Vite'],
-      status: 'In Progress',
-      icon: '🕵️',
-      color: '#00D9FF',
-      theme: 'spy'
+      title: 'D.I.L.I.M. 🚢',
+      description: 'Detection and Identification of Local and International Marine Vessels - A Python-based Dark Vessel Detection System utilizing computer vision and machine learning for maritime surveillance.',
+      tech: ['Python', 'OpenCV', 'TensorFlow', 'Machine Learning'],
+      status: 'Completed',
+      icon: '🚢',
+      color: '#0066FF',
+      theme: 'marine'
     },
     {
       id: 2,
-      title: 'Outlaw Security Suite 🤠',
-      description: 'Various cybersecurity and forensics projects as part of my CS specialization, focusing on penetration testing and vulnerability analysis. Gunslinger-grade security.',
-      tech: ['Python', 'Security Tools', 'Linux'],
-      status: 'Active',
-      icon: '🤠',
-      color: '#FF6B35',
-      theme: 'cowboy'
+      title: 'Arduino Radar 📡',
+      description: 'Arduino R3 and Ultrasonic Sensor With Working UI - A hardware project featuring real-time radar visualization and object detection with an interactive interface.',
+      tech: ['Arduino', 'C++', 'Ultrasonic Sensor', 'Processing'],
+      status: 'Completed',
+      icon: '📡',
+      color: '#39FF14',
+      theme: 'radar'
     },
     {
       id: 3,
-      title: 'High-Octane Engine System 🏎️',
-      description: 'Building robust REST APIs for various applications, demonstrating understanding of backend architecture and data flow. Pure horsepower.',
-      tech: ['Node.js', 'Express', 'PostgreSQL'],
-      status: 'Learning',
-      icon: '🏎️',
-      color: '#FF1744',
-      theme: 'racing'
+      title: 'J & J Ilonggo Inasal POS 🍗',
+      description: 'An Integrated Point-of-Sale System with Database for Employees, Ingredients, and Orders - Complete restaurant management solution with inventory tracking.',
+      tech: ['Database Design', 'SQL', 'POS System', 'Inventory Management'],
+      status: 'Completed',
+      icon: '🍗',
+      color: '#FF6B35',
+      theme: 'pos'
     },
     {
       id: 4,
-      title: 'Tactical Combat Engineering 🔧',
-      description: 'CAD designs and prototypes from my time in mechanical engineering, including simulations and real-world implementations. Built for the trenches.',
-      tech: ['CAD', 'SolidWorks', '3D Printing'],
-      status: 'Past Work',
-      icon: '🔧',
-      color: '#39FF14',
-      theme: 'mechanic'
+      title: 'Optimized Lalamove 🚚',
+      description: 'A Small Proof-of-Concept of an Optimized Application for Lalamove - Focused on route optimization and improved user experience for delivery services.',
+      tech: ['Route Optimization', 'Algorithm Design', 'UI/UX', 'Prototyping'],
+      status: 'Proof of Concept',
+      icon: '🚚',
+      color: '#FF1744',
+      theme: 'delivery'
     },
     {
       id: 5,
-      title: 'Dark Sky Aviation Protocol ✈️',
-      description: 'Advanced flight systems and drone development projects utilizing cutting-edge aerospace technology. Top Gun status.',
-      tech: ['Flight Control', 'Navigation', 'Autopilot'],
-      status: 'Experimental',
-      icon: '✈️',
-      color: '#0066FF',
-      theme: 'pilot'
-    },
-    {
-      id: 6,
-      title: 'Arsenal Command Center 💥',
-      description: 'Weapons systems integration and tactical deployment platforms. Complete armory management from firearms to heavy artillery.',
-      tech: ['Systems Integration', 'Real-time Control', 'Tracking'],
-      status: 'Classified',
-      icon: '⚔️',
+      title: '3JD Motors 🚙',
+      description: 'A Canva-based UI/UX Proposal for Jeepney Manufacturers - Modern design system and interface proposal for the iconic Philippine transportation industry.',
+      tech: ['Canva', 'UI/UX Design', 'Prototyping', 'Design Systems'],
+      status: 'Design Proposal',
+      icon: '🚙',
       color: '#9D4EDD',
-      theme: 'combat'
+      theme: 'motors'
     },
   ];
 
@@ -117,12 +107,12 @@ const Work = () => {
         <div className="container px-lg-5">
           <div className="p-4 p-lg-5 rounded-3 text-center" style={{background: 'linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%)', border: '3px solid #B8860B'}}>
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold" style={{color: '#FF1744', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>⚔️ Let's Get to Work! 💥</h1>
-              <p className="fs-4" style={{color: '#B8860B'}}>🏍️ Projects, Operations & Classified Missions 🏎️</p>
+              <h1 className="display-4 fw-bold" style={{color: '#FF1744', textShadow: '3px 3px 0px rgba(0, 0, 0, 0.9)'}}>💼 My Work & Projects 🚀</h1>
+              <p className="fs-4" style={{color: '#B8860B'}}>🔧 Software Development, Hardware Projects & Design 🎨</p>
               <div style={{fontSize: '2rem', margin: '1.5rem 0'}}>
-                <span style={{animation: 'bounce-light 2s ease-in-out infinite'}}>🔧</span>
-                <span style={{margin: '0 1rem', color: '#39FF14'}}>⚙</span>
-                <span style={{animation: 'rev-engine 2.5s ease-in-out infinite'}}>🏍️</span>
+                <span style={{animation: 'bounce-light 2s ease-in-out infinite'}}>🚢</span>
+                <span style={{margin: '0 1rem', color: '#39FF14'}}>📡</span>
+                <span style={{animation: 'rev-engine 2.5s ease-in-out infinite'}}>🚚</span>
               </div>
             </div>
           </div>
@@ -193,14 +183,14 @@ const Work = () => {
               <div className="card border-0" style={{background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%)', border: '3px solid #B8860B'}}>
 
                 <div className="card-body p-5 text-center">
-                  <h3 style={{color: '#B8860B', fontWeight: 900, fontSize: '1.8rem'}}>⚙️ Ready for the Next Operation? 💪</h3>
+                  <h3 style={{color: '#B8860B', fontWeight: 900, fontSize: '1.8rem'}}>🚀 Interested in Collaboration? 💡</h3>
                   <p className="fs-5 mb-4" style={{color: '#C0C0C0'}}>
-                    I'm always interested in new projects, missions, and opportunities that challenge me to push the limits.
+                    I'm always interested in new projects and opportunities that challenge me to innovate and create.
                   </p>
                   <div style={{fontSize: '2rem', margin: '1.5rem 0'}}>
-                    <span style={{animation: 'pulse-glow 3s ease-in-out infinite', color: '#FF6B35'}}>🔧</span>
-                    <span style={{margin: '0 1rem', color: '#00D9FF'}}>✈️</span>
-                    <span style={{animation: 'rev-engine 2.5s ease-in-out infinite', color: '#FF1744'}}>🏍️</span>
+                    <span style={{animation: 'pulse-glow 3s ease-in-out infinite', color: '#FF6B35'}}>💻</span>
+                    <span style={{margin: '0 1rem', color: '#00D9FF'}}>🔧</span>
+                    <span style={{animation: 'rev-engine 2.5s ease-in-out infinite', color: '#FF1744'}}>🎨</span>
                   </div>
                   <Link 
                     to="/contact" 
