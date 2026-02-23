@@ -79,8 +79,8 @@ const Contact = () => {
         <div className="container px-lg-5">
           <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold text-burgundy">Get in Touch</h1>
-              <p className="fs-4 text-dark">I'd love to hear from you!</p>
+              <h1 className="display-4 fw-bold" style={{color: '#1A1D24', textShadow: '3px 3px 0px #20A39E'}}>Get in Touch</h1>
+              <p className="fs-4" style={{color: '#3D5C3D'}}>I'd love to hear from you!</p>
             </div>
           </div>
         </div>

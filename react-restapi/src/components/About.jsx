@@ -54,8 +54,8 @@ const About = () => {
         <div className="container px-lg-5">
           <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold text-burgundy">About Me</h1>
-              <p className="fs-4 text-dark">Getting to know who I am</p>
+              <h1 className="display-4 fw-bold" style={{color: '#1A1D24', textShadow: '3px 3px 0px #20A39E'}}>About Me</h1>
+              <p className="fs-4" style={{color: '#3D5C3D'}}>Getting to know who I am</p>
             </div>
           </div>
         </div>

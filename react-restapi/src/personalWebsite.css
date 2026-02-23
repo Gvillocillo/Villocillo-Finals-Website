@@ -11607,3 +11607,93 @@ nav a:hover {
     0 0 0 4px #F2EDE6,
     0 0 30px rgba(212, 175, 55, 0.6);
 }
+
+/* Feature Colors */
+.feature-navy {
+  background: linear-gradient(135deg, #1A1D24 0%, #2a3a4a 50%, #0f1419 100%);
+  border: 4px solid #FFD700;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(26, 29, 36, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(32, 163, 158, 0.4);
+}
+
+.feature-green {
+  background: linear-gradient(135deg, #3D5C3D 0%, #2a4a2a 50%, #1a3a1a 100%);
+  border: 4px solid #FFD700;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(61, 92, 61, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(61, 92, 61, 0.4);
+}
+
+.feature-teal {
+  background: linear-gradient(135deg, #20A39E 0%, #1a8a88 50%, #0f5753 100%);
+  border: 4px solid #FFD700;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(32, 163, 158, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(32, 163, 158, 0.4);
+}
+
+.feature-burgundy {
+  background: linear-gradient(135deg, #8B4545 0%, #6D3333 50%, #5a2a2a 100%);
+  border: 4px solid #FFD700;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(139, 69, 69, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.feature-rust {
+  background: linear-gradient(135deg, #C1440E 0%, #a03a0c 50%, #7a2b08 100%);
+  border: 4px solid #FFD700;
+  color: white;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(193, 68, 14, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(193, 68, 14, 0.4);
+}
+
+.feature-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #a88a2a 50%, #8a6d1f 100%);
+  border: 4px solid #FFD700;
+  color: #1A1D24;
+  font-weight: bold;
+  box-shadow: 
+    0 8px 20px rgba(212, 175, 55, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3),
+    0 0 0 4px #F2EDE6,
+    0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Text color utilities */
+.text-navy {
+  color: #1A1D24 !important;
+}
+
+.text-forest-green {
+  color: #3D5C3D !important;
+}
+
+.text-teal {
+  color: #20A39E !important;
+}
+
+.text-rust {
+  color: #C1440E !important;
+}

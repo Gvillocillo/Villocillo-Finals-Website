@@ -59,18 +59,18 @@
 
 .guestbook-header .display-5 {
   font-family: "Playfair Display", serif;
-  color: var(--color-cream);
+  color: var(--color-navy);
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 4px 4px 0px var(--color-gold), 8px 8px 15px rgba(0, 0, 0, 0.4);
+  text-shadow: 4px 4px 0px var(--color-teal), 8px 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 .guestbook-header .fs-4 {
   font-family: "Caveat", "Lora", serif;
   font-size: 1.8rem;
-  color: var(--color-gold);
+  color: var(--color-forest-green);
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }

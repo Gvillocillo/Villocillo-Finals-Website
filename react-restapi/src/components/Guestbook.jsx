@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { guestbookService } from '../services/supabase';
+import { Link } from 'react-router-dom';
 import '../styles/guestbook.css';
+import '../styles/pages.css';
 
 const Guestbook = () => {
   const [entries, setEntries] = useState([]);
@@ -87,6 +89,51 @@ const Guestbook = () => {
   };
 
   return (
+    <>
+      {/* Responsive navbar */}
+      <nav className="navbar navbar-expand-lg navbar-custom bg-burgundy">
+        <div className="container px-lg-5">
+          <Link className="navbar-brand text-cream fw-bold" to="/">
+            A Site on the Web
+          </Link>
+          <button
+            className="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link text-cream" to="/portfolio">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-cream" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-cream" to="/contact">
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-cream active" to="/guestbook">
+                  Guestbook
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div className="guestbook-container">
       <header className="guestbook-header py-5">
         <div className="container px-lg-5">
@@ -262,6 +309,16 @@ const Guestbook = () => {
         </div>
       </section>
     </div>
+
+      {/* Footer */}
+      <footer className="py-5 bg-burgundy text-center text-cream">
+        <div className="container">
+          <p className="m-0">
+            Copyright &copy; Your Website 2026 | Powered by React + Supabase
+          </p>
+        </div>
+      </footer>
+    </>
   );
 };
 

@@ -10,6 +10,8 @@ const Work = () => {
       description: 'A vintage-styled responsive website built with React, Bootstrap, and Supabase. Features a guestbook system and REST API integration.',
       tech: ['React', 'Bootstrap', 'Supabase', 'Vite'],
       status: 'In Progress',
+      icon: '🌐',
+      color: '#1A1D24',
     },
     {
       id: 2,
@@ -17,6 +19,8 @@ const Work = () => {
       description: 'Various cybersecurity and forensics projects as part of my CS specialization, focusing on penetration testing and vulnerability analysis.',
       tech: ['Python', 'Security Tools', 'Linux'],
       status: 'Active',
+      icon: '🔐',
+      color: '#3D5C3D',
     },
     {
       id: 3,
@@ -24,6 +28,8 @@ const Work = () => {
       description: 'Building robust REST APIs for various applications, demonstrating understanding of backend architecture and data flow.',
       tech: ['Node.js', 'Express', 'PostgreSQL'],
       status: 'Learning',
+      icon: '⚙️',
+      color: '#20A39E',
     },
     {
       id: 4,
@@ -31,6 +37,8 @@ const Work = () => {
       description: 'CAD designs and prototypes from my time in mechanical engineering, including simulations and real-world implementations.',
       tech: ['CAD', 'SolidWorks', '3D Printing'],
       status: 'Past Work',
+      icon: '🏎️',
+      color: '#C1440E',
     },
   ];
 
@@ -85,8 +93,8 @@ const Work = () => {
         <div className="container px-lg-5">
           <div className="p-4 p-lg-5 bg-light rounded-3 text-center">
             <div className="m-4 m-lg-5">
-              <h1 className="display-4 fw-bold text-burgundy">Let's Get to Work!</h1>
-              <p className="fs-4 text-dark">My Projects & Experience</p>
+              <h1 className="display-4 fw-bold" style={{color: '#1A1D24', textShadow: '3px 3px 0px #20A39E'}}>Let's Get to Work!</h1>
+              <p className="fs-4" style={{color: '#3D5C3D'}}>My Projects & Experience</p>
             </div>
           </div>
         </div>
@@ -100,18 +108,23 @@ const Work = () => {
               <div key={project.id} className="col-lg-6 mb-5">
                 <div className="card border-burgundy h-100">
                   <div className="card-body p-4">
+                    <div className="mb-3">
+                      <div className="project-icon" style={{color: project.color, fontSize: '2.5rem', marginBottom: '1rem'}}>
+                        {project.icon}
+                      </div>
+                    </div>
                     <div className="d-flex justify-content-between align-items-start mb-3">
-                      <h3 className="card-title text-burgundy">{project.title}</h3>
+                      <h3 className="card-title" style={{color: project.color}}>{project.title}</h3>
                       <span className={`badge bg-${project.status === 'In Progress' ? 'burgundy' : project.status === 'Active' ? 'success' : project.status === 'Learning' ? 'info' : 'secondary'} text-cream`}>
                         {project.status}
                       </span>
                     </div>
                     <p className="card-text text-dark mb-4">{project.description}</p>
                     <div>
-                      <h6 className="text-burgundy fw-bold mb-2">Technologies:</h6>
+                      <h6 className="fw-bold mb-2" style={{color: project.color}}>Technologies:</h6>
                       <div className="mb-0">
                         {project.tech.map((tech, index) => (
-                          <span key={index} className="badge bg-light text-burgundy border border-burgundy me-2 mb-2">
+                          <span key={index} className="badge bg-light border me-2 mb-2" style={{color: project.color, borderColor: project.color, fontWeight: 'bold'}}>
                             {tech}
                           </span>
                         ))}

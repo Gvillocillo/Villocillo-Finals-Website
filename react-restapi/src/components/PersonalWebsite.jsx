@@ -75,10 +75,10 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-collection"></i>
+                  <div className="feature feature-navy rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-graduation-cap"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">A Sophomore Student</h2>
+                  <h2 className="fs-4 fw-bold text-navy">A Sophomore Student</h2>
                   <p className="mb-0">
                     Bachelor of Science in Computer Science - Specialization in Cybersecurity
                     and Forensics
@@ -90,10 +90,10 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-cloud-download"></i>
+                  <div className="feature feature-green rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-tools"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">A Frustrated Engineer</h2>
+                  <h2 className="fs-4 fw-bold text-forest-green">A Frustrated Engineer</h2>
                   <p className="mb-0">
                     I took up Bachelor of Science in Mechanical Engineering at the University of
                     Santo Tomas from 2023 to 2024.
@@ -105,10 +105,10 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-card-heading"></i>
+                  <div className="feature feature-teal rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-users"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">BS Org</h2>
+                  <h2 className="fs-4 fw-bold text-teal">BS Org</h2>
                   <p className="mb-0">
                     I serve as a relations officer in JISSA-APC, APC Chorale, and The RamPage!
                   </p>
@@ -119,10 +119,10 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-bootstrap"></i>
+                  <div className="feature feature-burgundy rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-wrench"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">A Tinkerer</h2>
+                  <h2 className="fs-4 fw-bold text-burgundy">A Tinkerer</h2>
                   <p className="mb-0">From troubleshooting to home repairs, I'm your guy!</p>
                 </div>
               </div>
@@ -131,11 +131,13 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-code"></i>
+                  <div className="feature feature-rust rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-laptop-code"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">A Certified Gearhead</h2>
-                  <p className="mb-0">As long as it has wheels and engines, I'm into it!</p>
+                  <h2 className="fs-4 fw-bold text-rust">Developer</h2>
+                  <p className="mb-0">
+                    Passionate about building solutions with code and creativity.
+                  </p>
                 </div>
               </div>
             </div>
@@ -143,12 +145,12 @@ const PersonalWebsite = () => {
             <div className="col-lg-6 col-xxl-4 mb-5">
               <div className="card bg-light border-0 h-100">
                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                    <i className="bi bi-patch-check"></i>
+                  <div className="feature feature-gold rounded-3 mb-4 mt-n4">
+                    <i className="fas fa-car"></i>
                   </div>
-                  <h2 className="fs-4 fw-bold">Old-School is the Future</h2>
+                  <h2 className="fs-4 fw-bold" style={{color: '#c1440e'}}>Certified Gearhead</h2>
                   <p className="mb-0">
-                    Country music, blues, and soul. If it's vintage, I dig it!
+                    As long as it has wheels and engines, I'm into it!
                   </p>
                 </div>
               </div>
