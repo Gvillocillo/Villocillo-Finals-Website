@@ -93,6 +93,7 @@
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
+  color: #FFFFFF !important;
 }
 
 .navbar-custom .navbar-brand:hover {
@@ -103,10 +104,12 @@
 .navbar-custom .nav-link {
   font-family: "Caveat", "Lora", serif;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 800 !important;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 1.5rem !important;
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-custom .nav-link::before {
@@ -146,7 +149,10 @@
 header {
   background-color: var(--color-cream);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  padding: 4rem 2rem;
+  border-bottom: 3px double var(--color-burgundy);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 header::before {
@@ -159,6 +165,21 @@ header::before {
   background-image: 
     repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(139, 69, 69, 0.03) 35px, rgba(139, 69, 69, 0.03) 70px);
   pointer-events: none;
+  z-index: 0;
+}
+
+header::after {
+  content: "★ ◆ ★ ◆ ★ ◆ ★ ◆ ★";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-burgundy);
+  font-size: 1.5rem;
+  letter-spacing: 2rem;
+  font-weight: 900;
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -180,6 +201,8 @@ header .fs-4 {
   color: var(--color-forest-green);
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 header .card {
@@ -344,9 +367,11 @@ footer p {
   font-family: "Caveat", "Lora", serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700 !important;
   position: relative;
   z-index: 1;
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* ==================== FORM STYLING ==================== */
@@ -453,6 +478,93 @@ section::before {
   background-image: 
     repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(139, 69, 69, 0.02) 50px, rgba(139, 69, 69, 0.02) 100px);
   pointer-events: none;
+}
+
+/* ==================== DECORATIVE ELEMENTS ==================== */
+
+.section-title {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--color-burgundy);
+}
+
+.section-title::after {
+  content: "★ ◆ ★";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-burgundy);
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  background: #FFF5E6;
+  padding: 0 1rem;
+  font-weight: 900;
+}
+
+.ornamental-card {
+  border: 3px double var(--color-burgundy);
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(139, 69, 69, 0.15);
+}
+
+.ornamental-card::before,
+.ornamental-card::after {
+  content: "◆";
+  position: absolute;
+  color: var(--color-gold);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.ornamental-card::before {
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ornamental-card::after {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Decorative page corners */
+.page-corner-tl {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+  font-weight: 900;
+}
+
+.page-corner-br {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 3rem;
+  color: var(--color-burgundy);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+  font-weight: 900;
+}
+
+/* Decorative line ornaments */
+.ornamental-line {
+  text-align: center;
+  color: var(--color-burgundy);
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  margin: 2rem 0;
+  font-weight: 900;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */

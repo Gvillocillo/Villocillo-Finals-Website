@@ -11,18 +11,20 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-  background: var(--color-cream);
+  background: linear-gradient(135deg, #FFF5E6 0%, #FFEECA 50%, #FFE4B5 100%);
   color: var(--color-navy);
   font-family: "Lora", Georgia, serif;
+  min-height: 100vh;
 }
 
 .container {
   background: linear-gradient(135deg, #FFF8F0 0%, #FFFAF5 100%);
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: 12px;
   margin: 2rem auto;
   border: 4px double var(--color-burgundy);
-  box-shadow: 8px 8px 0px rgba(139, 69, 69, 0.2);
+  box-shadow: 8px 8px 0px rgba(139, 69, 69, 0.3),
+              inset 0 0 40px rgba(212, 175, 55, 0.1);
   position: relative;
 }
 
@@ -31,16 +33,18 @@
   content: "◆";
   position: absolute;
   color: var(--color-gold);
-  font-size: 1.5rem;
-  top: -15px;
+  font-size: 3rem;
+  top: -30px;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .container::before {
-  left: 20px;
+  left: 10px;
 }
 
 .container::after {
-  right: 20px;
+  right: 10px;
 }
 
 .container h1 {

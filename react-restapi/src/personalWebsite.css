@@ -11697,3 +11697,125 @@ nav a:hover {
 .text-rust {
   color: #C1440E !important;
 }
+
+/* ==================== DECORATIVE DIVIDERS & ORNAMENTS ==================== */
+
+.decorative-divider {
+  position: relative;
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: var(--color-burgundy);
+  font-weight: 900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.decorative-divider::before,
+.decorative-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-burgundy), transparent);
+}
+
+.decorative-divider::before {
+  left: 0;
+  background: linear-gradient(to right, transparent, var(--color-burgundy));
+}
+
+.decorative-divider::after {
+  right: 0;
+  background: linear-gradient(to left, transparent, var(--color-burgundy));
+}
+
+/* Large ornamental section borders */
+.section-ornament {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-ornament::before {
+  content: "★ ◆ ★ ◆ ★ ◆ ★ ◆ ★";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-gold);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section-ornament::after {
+  content: "◆ ★ ◆ ★ ◆ ★ ◆ ★ ◆";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-burgundy);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Ornate card borders */
+.ornate-border {
+  border: 3px double var(--color-burgundy);
+  border-radius: 0;
+  position: relative;
+  padding: 2rem;
+}
+
+.ornate-border::before,
+.ornate-border::after {
+  content: "◆";
+  position: absolute;
+  color: var(--color-gold);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.ornate-border::before {
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ornate-border::after {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Corner ornaments */
+.corner-ornament {
+  position: relative;
+}
+
+.corner-ornament::before {
+  content: "☆";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  color: var(--color-gold);
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+.corner-ornament::after {
+  content: "☆";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  color: var(--color-burgundy);
+  font-size: 3rem;
+  opacity: 0.8;
+}
